@@ -1,0 +1,38 @@
+echo "ex00"
+gcc -Wall -Wextra -Werror ~/c00/ex00/ft_putchar.c ~/check00/main/00main.c -o ~/check00/out/00a.out
+~/check00/out/./00a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex01"
+gcc -Wall -Wextra -Werror ~/c00/ex01/ft_print_alphabet.c ~/check00/main/01main.c -o ~/check00/out/01a.out
+~/check00/out/./01a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex02"
+gcc -Wall -Wextra -Werror ~/c00/ex02/ft_print_reverse_alphabet.c ~/check00/main/02main.c -o ~/check00/out/02a.out
+~/check00/out/./02a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex03"
+gcc -Wall -Wextra -Werror ~/c00/ex03/ft_print_numbers.c ~/check00/main/03main.c -o ~/check00/out/03a.out
+~/check00/out/./03a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex04"
+gcc -Wall -Wextra -Werror ~/c00/ex04/ft_is_negative.c ~/check00/main/04main.c -o ~/check00/out/04a.out
+~/check00/out/./04a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex05"
+gcc -Wall -Wextra -Werror ~/c00/ex05/ft_print_comb.c ~/check00/main/05main.c -o ~/check00/out/05a.out
+~/check00/out/./05a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex06"
+gcc -Wall -Wextra -Werror ~/c00/ex06/ft_print_comb2.c ~/check00/main/06main.c -o ~/check00/out/06a.out
+~/check00/out/./06a.out
+echo
+read -p "Press [Enter] key to continue..."
+echo "ex07"
+gcc -Wall -Wextra -Werror ~/c00/ex07/ft_putnbr.c ~/check00/main/07main.c -o ~/check00/out/07a.out
+~/check00/out/./07a.out

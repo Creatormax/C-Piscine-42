@@ -1,0 +1,6 @@
+Credentials cache: API:5950
+        Principal: hmorales@42MADRID.COM
+
+  Issued                Expires               Principal
+Sep 20 13:35:25 2021  Sep 20 23:35:25 2021  krbtgt/42MADRID.COM@42MADRID.COM
+Sep 20 13:35:25 2021  Sep 20 23:35:25 2021  HTTP/student-storage.42madrid.com@42MADRID.COM
