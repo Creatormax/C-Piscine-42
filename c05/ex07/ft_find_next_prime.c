@@ -1,21 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmorales <hmorales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/07 20:41:54 by hmorales          #+#    #+#             */
-/*   Updated: 2021/10/11 15:52:06 by hmorales         ###   ########.fr       */
+/*   Created: 2021/10/11 18:41:16 by hmorales          #+#    #+#             */
+/*   Updated: 2021/10/11 18:56:10 by hmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_power(int nb, int power)
+int	ft_is_prime(int nb)
 {
-	if (power < 0)
+	int	n;
+
+	n = 3;
+	if (nb <= 0 || nb == 1 || nb % 2 == 0)
 		return (0);
-	else if (power == 0)
-		return (1);
-	else
-		return (nb * ft_recursive_power(nb, power - 1));
+	while (n < 46340 && nb >= n * n)
+	{
+		if (nb % n == 0)
+			return (0);
+		n += 2;
+	}
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	int	i;
+
+	i = 0;
+	if (ft_is_prime(nb) == 0)
+		return (0);
+	nb++;
+	while (i == 0)
+	{
+		i = ft_is_prime(nb);
+		nb++;
+	}
+	return (nb - 1);
 }

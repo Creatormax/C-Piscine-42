@@ -6,7 +6,7 @@
 /*   By: hmorales <hmorales@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 19:29:33 by hmorales          #+#    #+#             */
-/*   Updated: 2021/10/07 20:23:18 by hmorales         ###   ########.fr       */
+/*   Updated: 2021/10/11 13:46:12 by hmorales         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,21 @@ int	ft_iterative_factorial(int nb)
 	int	i;
 	int	aux;
 
-	a = 0;
 	i = 0;
 	if (nb == 0)
 		return (1);
 	else if (nb < 0)
 		return (0);
-	a = nb - 1;
-	while (i < a)
+	else
 	{
-		aux = nb * nb--;
-		i++;
-	}
-	return (nb);
+		a = nb;
+		aux = nb;
+		while (i < a && nb > 1)
+		{
+			aux *= (nb - 1);
+			nb--;
+			i++;
+		}
+		return (aux);
+	}	
 }
